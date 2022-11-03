@@ -1,6 +1,0 @@
-{
-    "server": {
-        "httpPort": 3000,
-        "httpsPort" : 3001
-    }
-}

@@ -1,0 +1,43 @@
+{
+  "name": "koa2-babel-example",
+  "version": "1.0.0",
+  "description": "koa2-babel-example",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "test",
+    "start1": "node dist/index.js",
+    "start": "babel-node ./src/index.ts",
+    "dev1": "nodemon --exec babel-node ./src/index.ts",
+    "dev2": "DEV_ENV=true nodemon index.ts",
+    "build": "babel src --out-dir dist --copy-files --extensions '.ts,.js'",
+    "types": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/sjbwylbs/sjbwylbs"
+  },
+  "keywords": [
+    "koa2",
+    "babel",
+    "typescript",
+    "example"
+  ],
+  "author": "sjbwylbs",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/runtime": "^7.20.1",
+    "koa": "^2.13.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.6",
+    "@babel/node": "^7.20.0",
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/koa": "^2.13.4",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.8.4"
+  }
+}
