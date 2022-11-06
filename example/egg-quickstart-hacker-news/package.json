@@ -1,0 +1,30 @@
+{
+  "name": "egg-quickstart-hacker-news",
+  "version": "1.0.0",
+  "description": "egg quick start hacker news",
+  "main": "index.js",
+  "scripts": {
+    "test": "egg-bin test",
+    "cov": "egg-bin cov",
+    "dev": "egg-bin dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/sjbwylbs/sjbwylbs"
+  },
+  "keywords": [
+    "egg",
+    "hackernews"
+  ],
+  "author": "sjbwylbs",
+  "license": "ISC",
+  "dependencies": {
+    "egg": "^3.3.3",
+    "egg-view-nunjucks": "^2.3.0",
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "egg-bin": "^5.3.1",
+    "egg-mock": "^5.1.0"
+  }
+}
