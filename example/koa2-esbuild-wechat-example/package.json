@@ -1,0 +1,39 @@
+{
+  "name": "koa2-esbuild-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typecheck": "tsc --noEmit",
+    "checkbuild": "npm run typecheck && webpack --color --progress",
+    "dev": "webpack --color --progress --watch --hot",
+    "build": "webpack --color --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/sjbwylbs/sjbwylbs"
+  },
+  "keywords": [
+    "koa2",
+    "babel",
+    "typescript",
+    "example"
+  ],
+  "author": "sjbwylbs",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.13.4"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.4",
+    "esbuild-loader": "^2.20.0",
+    "fork-ts-checker-webpack-plugin": "^7.2.13",
+    "nodemon-webpack-plugin": "^4.8.1",
+    "typescript": "^4.8.4",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-node-externals": "^3.0.0",
+    "yarn": "^1.22.19"
+  }
+}
