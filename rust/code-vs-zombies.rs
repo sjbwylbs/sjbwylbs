@@ -96,3 +96,20 @@ fn main() {
 
 //REFs
 // https://www.codingame.com/ide/puzzle/code-vs-zombies
+// https://github.com/Sterbweise/Codingame/blob/main/Optimization/Code%20vs%20Zombies/main.cs
+// 
+
+/*
+At each turn :
+
+while there is some time left
+    generate a random strategy
+    simulate the strategy
+apply the first move of the best strategy seen so far
+A strategy is :
+
+repeat X times (X chosen randomly between 0 and 3)
+    move to a random position
+for each zombie still alive (the order of the zombies is also chosen randomly)
+    move toward the zombie until he's killed
+*/    
