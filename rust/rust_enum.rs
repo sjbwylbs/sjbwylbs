@@ -48,6 +48,22 @@ impl From<String> for LogLevel {
             _ => LogLevel::UNKNOW
         }
     }
+
+    fn test() {
+        // Write an answer using println!("message...");
+        // To debug: eprintln!("Debug message...");
+        let arr = dna.split("");
+        let mut a = "".to_string();
+        for xx in arr {
+            let s = xx.to_string();
+            match s {
+                s if s == "A" => a = a + "AA",
+                s if s == "T" => a = a + "TTT",
+                s if s == "C" => a = a + "C",
+                _ => a = a + "" 
+            }
+        }
+    }
 }
 
 
