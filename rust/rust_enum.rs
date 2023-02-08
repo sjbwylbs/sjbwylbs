@@ -49,6 +49,7 @@ impl From<String> for LogLevel {
         }
     }
 
+    // 碰到A 双倍, T 三倍， C 不变， G 消除
     fn test() {
         // Write an answer using println!("message...");
         // To debug: eprintln!("Debug message...");
@@ -63,6 +64,51 @@ impl From<String> for LogLevel {
                 _ => a = a + "" 
             }
         }
+    }
+
+    //  计算字符个数
+    fn test2() {
+        // Write an answer using println!("message...");
+        // To debug: eprintln!("Debug message...");
+        // eg.1
+        let message = "To debug: eprintln!(\"Debug message...\")";
+        let mut count = 0; 
+        let message = message.chars().filter(|x| x.is_digit(10)).join("");
+        // 数字 48-57
+        // 大写 65-90
+        // 小写 97-122
+        for y in message.chars() {
+            let z = y.to_string().parse::<i32>().unwrap() as u32;
+            
+            match z {
+                65..=90 => {
+                    count +=1;
+                },
+                97..=122 => {
+                    count +=1;
+                },
+                _ => {}
+            }
+        }
+        println!("{}", count);
+        // eg.2
+
+        let message = "To debug: eprintln!(\"Debug message...\")";
+        let mut count = 0; 
+
+        for y in message.chars() {
+            match y {
+                'a'..='z' => {
+                    count +=1;
+                },
+                'A'..='Z' => {
+                    count +=1;
+                },
+                _ => {}
+            }
+        }
+
+        println!("{}", count);
     }
 }
 
