@@ -14,6 +14,6 @@
     "typescript": "4.2.4"
   },
   "dependencies": {
-    "cowsay": "1.4.0"
+    "cowsay": "1.5.0"
   }
 }
